@@ -1,0 +1,331 @@
+body{
+   margin: 0; 
+   padding: 0;
+   background: #E5E5E5;
+}
+.workspace{
+    margin: auto;
+    width: 1440px;
+    height: 1024px;
+}
+.logo{
+    float: left;
+    width: 100%;
+}
+.imglogo{
+    float: inherit;
+    margin-top: 3.91%;
+    margin-left: 5.83%;     
+}
+.txtlogo{
+    float: inherit;
+    margin-top: 3.91%;
+    margin-left: 10%;
+    font-weight: bold;
+    font-size: 2.5em;
+    color: #0A3871;    
+}
+.input{
+    float: left;
+    width: 70%;
+    height: 65%;    
+}
+#txtinicio{
+    float: left;
+    margin-left: 20%;
+    margin-top: 14%;
+    width: 100%;
+    color: #0A3871;
+    font-size: 1.2em;
+    font-style: italic;
+    font-weight: bold;    
+}
+#btninicio{
+    float: left;
+    margin-left: 42%;
+    margin-top: 1%;
+    padding: 12px;
+    border-radius: 15px;
+    border: none;
+    background: lightslategrey;
+    color: white;
+    font-weight: bold;
+    font-style: italic;
+    cursor: pointer;
+}
+#btninicio:hover{
+    transform: scale(1.2);
+    transition: 0.5s;
+    background: #0A3871;
+    rotate: 360deg;
+}
+.output{
+    float: right;
+    margin-top: -3%;
+    width: 30%;
+    height: 92%;
+    border-radius: 32px;
+    background: white;
+}
+.button{
+    float: left;
+    width: 70%;
+    height: auto;    
+}
+
+#txtinput2{
+    display:none;
+    float: left;
+    margin-left: 20%;
+    margin-top: 10%;
+    width: 70%;
+    height: 20%;
+    color: #0A3871;
+    font-size: 1.3em;
+    border: none;
+    outline: none;    
+    background: #E5E5E5;
+}
+#txtinput2::placeholder{
+   color: #0A3871;
+   font-weight: bold;
+}
+#imgoutput{
+    margin-top: 50%;
+    margin-left: 7%;
+    width: 90%;
+    height: auto;
+}
+#txtoutput1{
+    margin-top: 5%;
+    margin-left: 15%;
+    margin-right: 15%;
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #343A40;    
+}
+
+.txtoutput3{
+    float: left;
+    margin-top: 5%;
+    margin-left: 10%;   
+    width: 80%;
+    height: auto;    
+    padding-bottom: auto; 
+    border-radius: 12px;
+    border: none;
+    outline: none;
+    background: white;
+    resize: none;        
+}
+.txtoutput3::placeholder{
+    color: #0A3871;
+    font-size: 1em;
+    text-align: center;
+}
+.imginfo{
+    float: left;    
+    margin-left: 20%; 
+}
+.txtinfo{
+    float: inherit;    
+    margin: 0 auto;
+    width: 75%;
+}
+.btnencriptar{    
+    width: 25%;
+    padding: 15px;
+    border-radius: 24px;
+    margin-top: 1%;
+    margin-left: 18%;
+    background: #0A3871;
+    color: white;
+    border: none;
+    font-size: 1em;
+    cursor: pointer;
+}
+.btndesencriptar{    
+    width: 25%;
+    padding: 15px;
+    border-radius: 24px;
+    margin-top: 1%;
+    margin-left: 8%;
+    background: #D8DFE8;
+    border-color: #0A3871;
+    color: #0A3871;
+    font-size: 0.9em;
+    cursor: pointer;
+}
+#btncopiar{   
+    display: none;    
+    width: 45%;
+    padding: 15px;
+    border-radius: 24px;
+    margin-top: 125%;
+    margin-left: 30%;
+    background: white;
+    border-color: #0A3871;
+    color: #0A3871;
+    font-size: 0.9em;
+    cursor: pointer;
+}
+.autor{
+    background: linear-gradient(grey,white);
+    text-align: center;
+    font-size: 1em;
+    font-weight: bold;
+    color: rgb(113, 10, 182);    
+}
+
+/*! Condiciones para tablet*/
+
+@media screen and (max-width:768px){   
+
+    .workspace{
+        width: 768px;
+        height: 1174px;
+    }
+    #imgoutput{
+        display: none;
+    }
+    #txtinicio{        
+        margin-left: 10%;
+        margin-top: 14%;  
+        width: 100%;
+        text-align: center; 
+        font-size: 1.5em;        
+    }
+    #btninicio{        
+        margin-left: 45%;
+        margin-top: 1%; 
+        font-size: 1.5em;       
+    }
+    .imginfo{
+        float: left;    
+        margin-left: 10%; 
+        margin-top: -35%;
+    }
+    .txtinfo{
+        float: inherit;    
+        margin-top: -35%;
+        margin-left: 13.5%;
+        width: 75%;
+    }
+    .btnencriptar{  
+        float: left; 
+        margin-top: -30%;
+        margin-left: 15%;
+        width: 50%;
+        font-size: 1.5em;             
+    }
+    .btndesencriptar{
+        float: left;
+        margin-top: -30%;
+        margin-left: 75%;
+        width: 50%;  
+        font-size: 1.5em;            
+    }
+    #btncopiar{      
+        float: left;      
+        width: 100%;        
+        margin-top: -10%;
+        margin-left: 0.5%;
+        font-size: 1.5em;               
+    }
+    #txtoutput1{
+        font-size: 2.5em;
+    }
+    .txtoutput3{        
+        font-size: 1.5em;
+        text-align: center;
+    }
+    .output{
+        position: absolute; 
+        margin-top:100%;
+        margin-left: 5%;                    
+        width: 90%;
+        height: auto;                   
+    }      
+}
+
+/*! Condiciones para celular*/
+
+@media screen and (max-width:375px){   
+
+    .workspace{
+        width: 375px;
+        height: 933px;
+    }
+    .txtlogo{
+        font-size: 1.1em;
+        margin-top: 10%;
+    }
+    #imgoutput{
+        display: none;
+    }
+    #txtinicio{        
+        margin-left: 15%;
+        margin-top: 14%;  
+        width: 100%;
+        text-align: center; 
+        font-size: 1em;        
+    }
+    #btninicio{        
+        margin-left: 35%;
+        margin-top: 3%; 
+        font-size: 1.5em;       
+    }
+    #txtinput2{
+        font-size: 1.5em;
+        height: 25%;
+        width: auto;
+    }
+    .imginfo{
+        float: left;    
+        margin-left: 10%; 
+        margin-top: -100%;
+    }
+    .txtinfo{
+        float: inherit;    
+        margin-top: -100%;
+        margin-left: 17.5%;
+        width: 90%;
+    }
+    .btnencriptar{  
+        float: left; 
+        margin-top: -90%;
+        margin-left: 20%;
+        width: 100%;
+        font-size: 1.5em;             
+    }
+    .btndesencriptar{
+        float: left;
+        margin-top: -60%;
+        margin-left: 20%;
+        width: 100%;
+        font-size: 1.5em;           
+    }
+    #btncopiar{      
+        float: left;      
+        width: 90%;        
+        margin-top: 25%;
+        margin-left: 6%;
+        font-size: 1.5em;               
+    } 
+    #txtoutput1{        
+        font-size: 1.5em;
+    }
+    .txtoutput3{        
+        font-size: 1.3em;
+        text-align: center;
+        height: 25%;
+    }
+    .output{
+        position: absolute; 
+        margin-top:165%;
+        margin-left: 5%;                    
+        width: 90%;
+        height: 35%;                   
+    }      
+}

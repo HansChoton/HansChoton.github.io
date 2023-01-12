@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Encriptador de Texto</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="reset.css">
+        <script src="script.js"></script>
+        
+    </head>
+    <body>
+        <main class="workspace">
+            <div class="logo">
+                <img class="imglogo" src="imagenes/logo.png" alt="logo alura">
+                <h1 class="txtlogo">Bienvenido al encriptador de Alura</h1>
+            </div>
+
+            <div class="input">
+                <p id="txtinicio">Presione el botón para iniciar a develar los misterios de la encriptación</p>
+                <input id="btninicio" type="button" value="Empecemos" onclick="iniciar()">
+                <input class="txtinput2" id="txtinput2" type="text" placeholder="Ingrese el texto aquí">
+            </div> 
+
+            <div class="output">                
+                <img id="imgoutput" src="imagenes/Buscando.png" alt="Imagen Buscando">
+                <h1 id="txtoutput1">Ningún mensaje fue encontrado</h1>
+                <textarea class="txtoutput3" id="txtoutput3" name="" id="" cols="30" rows="10">Ingrese el texto que desees encriptar o desencriptar</textarea>                
+                <button id="btncopiar" onclick="copiar()">Copiar</button>                              
+            </div>
+
+            <div class="button">
+                <img class="imginfo" src="imagenes/information.png">
+                <p class="txtinfo">Solo letras minúsculas y sin acentos</p>
+                <button class="btnencriptar" onclick="encriptar()" type="button">Encriptar</button>
+                <button class="btndesencriptar" onclick="desencriptar()">Desencriptar</button>
+            </div>
+        </main>
+        <footer>
+            <p class="autor">Created by Hans Choton</p>
+        </footer>               
+    </body>
+</html>
